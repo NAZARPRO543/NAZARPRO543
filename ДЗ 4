@@ -1,0 +1,31 @@
+class Computer:
+    def calculate(self):
+        print("Calculating…")
+
+    def __init__(self):
+        super().__init__()
+        self.memory = "256 mb"
+class Display:
+    def display(self):
+        print("I display the image on the screen…")
+    def __init__(self):
+        super().__init__()
+        self.resolution = "4k"
+    def __init__(self):
+        super().__init__()
+        self.FPS = "120 FPS"
+class GPT:
+            def calculate(self):
+                print("Calculating…")
+            def __init__(self):
+                super().__init__()
+                self.IQ = "IQ = 500"
+class SmartPhone(Display, Computer, GPT):
+    def print_info(self):
+        print(self.FPS)
+        print(self.memory)
+        print(self.IQ)
+iphone = SmartPhone()
+iphone.calculate()
+iphone.display()
+iphone.print_info()
